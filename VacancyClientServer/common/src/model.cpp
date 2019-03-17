@@ -6,7 +6,8 @@ using namespace nlohmann;
 
 VacancyInfo::VacancyInfo(int32_t specialityId, const std::string &company, const std::string &position, int32_t minAge, int32_t maxAge,
                          int32_t salary)
-        : company(company)
+        : specialityId(specialityId)
+        , company(company)
         , position(position)
         , minAge(minAge)
         , maxAge(maxAge)
